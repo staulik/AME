@@ -1,0 +1,101 @@
+[
+  {
+    "uri": "features/specifications/Cadastro_Empregado.feature",
+    "id": "manter-o-cadastro-de-empregados-através-da-api",
+    "keyword": "Funcionalidade",
+    "name": "Manter o cadastro de Empregados através da API",
+    "description": "Como um aplicação de serviço\nQuero enviar requisições para o cadastro de Empregados\npara verificar se o cadastro funciona corretamente",
+    "line": 3,
+    "elements": [
+      {
+        "id": "manter-o-cadastro-de-empregados-através-da-api;atualizar-empregado",
+        "keyword": "Cenario",
+        "name": "Atualizar Empregado",
+        "description": "",
+        "line": 21,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@atualizar",
+            "line": 20
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.29.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 29400
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.29.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 26200
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "a API atualizar Empregados definida",
+            "line": 22,
+            "match": {
+              "location": "features/step_definitions/Cadastro_Empregado.rb:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 40900
+            }
+          },
+          {
+            "keyword": "Quando ",
+            "name": "é enviada a requisição para alterar o empregado",
+            "line": 23,
+            "output": [
+              "{\"name\":\"Remona\",\"salary\":\"1437.61\",\"age\":\"74\",\"id\":\"189326\"}"
+            ],
+            "match": {
+              "location": "features/step_definitions/Cadastro_Empregado.rb:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5920616300
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "posso ver que que o empregado foi alterado",
+            "line": 24,
+            "output": [
+              "{\"name\":\"Leopoldo\",\"salary\":\"4500,28\",\"age\":\"36\"}"
+            ],
+            "match": {
+              "location": "features/step_definitions/Cadastro_Empregado.rb:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1280642400
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-3.29.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 73700
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,7 @@
+---
+default: -p html -p bdd -p json
+html: --format html --out=test_results/Resutado_Testes.html
+dot: --format progress
+bdd: --format pretty
+json: --format json -o "report.json"
+

@@ -1,0 +1,401 @@
+[
+  {
+    "uri": "features/specifications/Cadastro_Empregado.feature",
+    "id": "manter-o-cadastro-de-empregados-através-da-api",
+    "keyword": "Funcionalidade",
+    "name": "Manter o cadastro de Empregados através da API",
+    "description": "Como um aplicação de serviço\nQuero enviar requisições para o cadastro de Empregados\npara verificar se o cadastro funciona corretamente",
+    "line": 3,
+    "elements": [
+      {
+        "keyword": "Contexto",
+        "name": "",
+        "description": "",
+        "line": 8,
+        "type": "background",
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.29.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 29400
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.29.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23100
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "a API Manter Empregados definida",
+            "line": 9,
+            "match": {
+              "location": "features/step_definitions/Cadastro_Empregado.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 60600
+            }
+          }
+        ]
+      },
+      {
+        "id": "manter-o-cadastro-de-empregados-através-da-api;cadastrar-empregado",
+        "keyword": "Cenario",
+        "name": "Cadastrar Empregado",
+        "description": "",
+        "line": 12,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@criar",
+            "line": 11
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Quando ",
+            "name": "é enviada a requisição para criar empregado",
+            "line": 13,
+            "match": {
+              "location": "features/step_definitions/Cadastro_Empregado.rb:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5041047500
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "posso visualizar as informações do registro",
+            "line": 14,
+            "output": [
+              "{\"name\":\"Wan\",\"salary\":\"8670.11\",\"age\":\"57\",\"id\":\"189737\"}"
+            ],
+            "match": {
+              "location": "features/step_definitions/Cadastro_Empregado.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 698625900
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-3.29.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 40200
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Contexto",
+        "name": "",
+        "description": "",
+        "line": 8,
+        "type": "background",
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.29.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 64800
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.29.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 69000
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "a API Manter Empregados definida",
+            "line": 9,
+            "match": {
+              "location": "features/step_definitions/Cadastro_Empregado.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 60700
+            }
+          }
+        ]
+      },
+      {
+        "id": "manter-o-cadastro-de-empregados-através-da-api;consultar-empregado",
+        "keyword": "Cenario",
+        "name": "Consultar Empregado",
+        "description": "",
+        "line": 17,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@consultar",
+            "line": 16
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Quando ",
+            "name": "é enviada a requisição para consultar o empregado",
+            "line": 18,
+            "output": [
+              "{\"name\":\"Sang\",\"salary\":\"9401.65\",\"age\":\"80\",\"id\":\"189739\"}"
+            ],
+            "match": {
+              "location": "features/step_definitions/Cadastro_Empregado.rb:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1267849800
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "posso visualizar as informações retornadas",
+            "line": 19,
+            "output": [
+              "{\"id\":\"189739\",\"employee_name\":\"Sang\",\"employee_salary\":\"9402\",\"employee_age\":\"80\",\"profile_image\":\"\"}"
+            ],
+            "match": {
+              "location": "features/step_definitions/Cadastro_Empregado.rb:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1652289700
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-3.29.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 61200
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Contexto",
+        "name": "",
+        "description": "",
+        "line": 8,
+        "type": "background",
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.29.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 56000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.29.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 69500
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "a API Manter Empregados definida",
+            "line": 9,
+            "match": {
+              "location": "features/step_definitions/Cadastro_Empregado.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 75000
+            }
+          }
+        ]
+      },
+      {
+        "id": "manter-o-cadastro-de-empregados-através-da-api;atualizar-empregado",
+        "keyword": "Cenario",
+        "name": "Atualizar Empregado",
+        "description": "",
+        "line": 22,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@atualizar",
+            "line": 21
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Quando ",
+            "name": "é enviada a requisição para alterar o empregado",
+            "line": 23,
+            "output": [
+              "{\"name\":\"Aubrey\",\"salary\":\"6852.59\",\"age\":\"98\",\"id\":\"189741\"}"
+            ],
+            "match": {
+              "location": "features/step_definitions/Cadastro_Empregado.rb:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1366776900
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "posso ver que que o empregado foi alterado",
+            "line": 24,
+            "output": [
+              "{\"name\":\"Leonida\",\"salary\":\"4500,28\",\"age\":\"36\"}"
+            ],
+            "match": {
+              "location": "features/step_definitions/Cadastro_Empregado.rb:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1411813800
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-3.29.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 59800
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Contexto",
+        "name": "",
+        "description": "",
+        "line": 8,
+        "type": "background",
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.29.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 111500
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.29.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 72500
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "a API Manter Empregados definida",
+            "line": 9,
+            "match": {
+              "location": "features/step_definitions/Cadastro_Empregado.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 74600
+            }
+          }
+        ]
+      },
+      {
+        "id": "manter-o-cadastro-de-empregados-através-da-api;remover-empregado",
+        "keyword": "Cenario",
+        "name": "Remover Empregado",
+        "description": "",
+        "line": 27,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@deletar",
+            "line": 26
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Quando ",
+            "name": "é enviada a requisição para remover o empregado",
+            "line": 28,
+            "output": [
+              "{\"name\":\"Scotty\",\"salary\":\"7007.79\",\"age\":\"96\",\"id\":\"189743\"}"
+            ],
+            "match": {
+              "location": "features/step_definitions/Cadastro_Empregado.rb:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1403204300
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "posso visualizar a mensagem de sucesso da operação",
+            "line": 29,
+            "output": [
+              "{\"success\":{\"text\":\"successfully! deleted Records\"}}"
+            ],
+            "match": {
+              "location": "features/step_definitions/Cadastro_Empregado.rb:49"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1379497400
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-3.29.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 98900
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
